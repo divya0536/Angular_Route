@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { CategoryComponent } from './category/category.component';
+import { EmplistComponent } from './emplist/emplist.component';
+import { DeptlistComponent } from './deptlist/deptlist.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { DeptDetailComponent } from './dept-detail/dept-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    CategoryComponent,
+    EmplistComponent,
+    DeptlistComponent,
     PageNotFoundComponent,
-    ProductDetailComponent
+    DeptDetailComponent
   ],
   imports: [
     BrowserModule,

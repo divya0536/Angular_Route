@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CategoryComponent } from './category/category.component';
-import { ProductComponent } from './product/product.component';
+
+
+import { DeptlistComponent } from './deptlist/deptlist.component';
+import { EmplistComponent } from './emplist/emplist.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DeptDetailComponent } from './dept-detail/dept-detail.component';
 
 const routes: Routes = [
-  { path : 'category', component: CategoryComponent},
-  { path : 'product', component: ProductComponent}
+  { path : '', redirectTo: '/departments', pathMatch: 'full'},
+  { path : 'departments', component: DeptlistComponent},
+  { path : 'departments/:id', component: DeptDetailComponent},
+  { path : 'employees', component: EmplistComponent},
+  { path : '**', component: PageNotFoundComponent}
 ];
-
-
 
 
 @NgModule({
